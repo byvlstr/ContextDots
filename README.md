@@ -1,6 +1,7 @@
 # ContextDots
 
 INTRODUCTION
+-------------------------
 
 ContextDots is a Microsoft PowerPoint Macro that empowers people
 to do better presentations. It features a "progress bar" at each slide's
@@ -17,6 +18,7 @@ Link to the source code as txt file: http://1drv.ms/1FVmYAL
 
 
 INSTRUCTIONS
+-------------------------
 
 REQUIREMENTS
 + Microsoft Office 2007+ able to run Macros (Windows RT is not
@@ -26,6 +28,7 @@ compatible)
 
 
 HOW TO USE IT
+
 1/ Create your presentation by using PowerPoint's "Section" feature to
 partition your presentation
 
@@ -46,7 +49,6 @@ presentation
 NB: If you change something and want to update the ContextDots bar,
 simply select "View" -> "Macros" -> "ContextDots" -> "Execute"
 
----
 
 To remove ContextDots from your slides, select "Edit" in "Macros" and
 replace the code with the following :
@@ -66,6 +68,7 @@ End Sub
 
 
 PERSONALIZE CONTEXTDOTS
+-------------------------
 
 + If you want to change the bullets' or background colours, here is a
 set of popular colours:
