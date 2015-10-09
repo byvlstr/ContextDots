@@ -48,28 +48,7 @@ simply select "View" -> "Macros" -> "ContextDots" -> "Execute"
 
 
 To remove ContextDots from your slides, select "Edit" in "Macros" and
-replace the code with the following :
-
-Sub ContextDots_byvlstr()
-
-    On Error Resume Next
-    
-            With ActivePresentation
-            
-                SectionCount = .SectionProperties.Count
-                
-                For X = 1 To .Slides.Count
-                
-                    .Slides(X).Shapes("BG").Delete
-                    
-                    .Slides(X).Shapes("Bullet").Delete
-                    
-                    .Slides(X).Shapes("SectionTitleBox").Delete
-                    
-                Next X:
-                
-            End With
-End Sub
+replace the code with the code in delete_ContextDots
 
 
 
