@@ -1,0 +1,19 @@
+Sub ContextDots_byvlstr()
+    On Error Resume Next
+    
+            With ActivePresentation
+            
+                SectionCount = .SectionProperties.Count
+                
+                For X = 1 To .Slides.Count
+                
+                    .Slides(X).Shapes("BG").Delete
+                    
+                    .Slides(X).Shapes("Bullet").Delete
+                    
+                    .Slides(X).Shapes("SectionTitleBox").Delete
+                    
+                Next X:
+                
+            End With
+End Sub
