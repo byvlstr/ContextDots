@@ -20,8 +20,8 @@ INSTRUCTIONS
 REQUIREMENTS
 + Microsoft Office 2007+ able to run Macros (Windows RT is not
 compatible)
-+ Use PowerPoint's "Section" function to separate big divisions
-+ Keep 35 points free at the top of the slide
++ Use PowerPoint's "Section" feature to separate important parts
++ Keep space free (default is 35 points) at the top of the slide
 
 
 HOW TO USE IT
@@ -34,10 +34,10 @@ partition your presentation
 
 3/ Enter a name, e.g. "ContextDots", and select "Create"
 
-4/ Then copy and paste the ContextDots by vlstr code into the window,
+4/ Then copy and paste the ContextDots code into the window,
 replacing default code lines
 
-5/ To execute this Macro, press the little (green) play symbol in the
+5/ To execute this Macro, press the little (green) "play" symbol in the
 upper toolbar
 
 6/ ContextDots should now be integrated into your PowerPoint
