@@ -21,7 +21,7 @@ REQUIREMENTS
 + Microsoft Office 2007+ able to run Macros (Windows RT is not
 compatible)
 + Use PowerPoint's "Section" feature to separate important parts
-+ Keep space free (default is 35 points) at the top of the slide
++ Keep space free (default is 25 points) at the top of the slide
 
 
 HOW TO USE IT
