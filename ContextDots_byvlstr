@@ -1,45 +1,47 @@
-Sub ContextDots_byvlstr()
+Sub ContextDots()
     On Error Resume Next
             With ActivePresentation
             
                 SectionCount = .SectionProperties.Count
                 
                 For X = 1 To .Slides.Count
-                    .Slides(X).Shapes("BG").Delete
+                    .Slides(X).Shapes("Background").Delete
                     .Slides(X).Shapes("Bullet").Delete
                     .Slides(X).Shapes("SectionTitleBox").Delete
                     
-                    Set bg = .Slides(X).Shapes.AddShape(msoShapeRectangle, 0, 0, .PageSetup.SlideWidth, 35)
+                    Set bg = .Slides(X).Shapes.AddShape(msoShapeRectangle, 0, 0, .PageSetup.SlideWidth, 25)
                     bg.Name = "Background"
-                    ' Change the rectangle's colour here
+                    ' Change the rectangle's colours here
                     bg.Fill.ForeColor.RGB = vbBlack
+                    bg.Line.ForeColor.RGB = vbBlack
                     
-                    ' Change the bullets' size and shape here
-                    BulletSize = 9
+                    ' Change the bullets' size and Shape here
+                    BulletSize = 6
                     BulletShape = msoShapeOval
+                    BulletSpacing = 4
                     
                     Offset = 20
                     SlideNumber = 1
                     For Y = 1 To SectionCount
                     
                         If Y <> 1 Then
-                            Offset = Offset + .PageSetup.SlideWidth / SectionCount
+                            Offset = (Y - 1) * .PageSetup.SlideWidth / (SectionCount)
                         End If
                         TextboxOffset = Offset - 7.5
                         
                         SectionSlidesCount = .SectionProperties.SlidesCount(Y)
                         sectionTitle = .SectionProperties.Name(Y)
                         Set textbox = .Slides(X).Shapes.AddTextbox(msoTextOrientationHorizontal, _
-                                TextboxOffset + (5 + BulletSize) * SlideNumber, -2, 200, 50)
+                                TextboxOffset, -2, 200, 50)
                         textbox.TextFrame.TextRange.Text = sectionTitle
                         textbox.Name = "SectionTitleBox"
                         ' Change the font colour and size here
                         textbox.TextFrame.TextRange.Font.Color = vbWhite
-                        textbox.TextFrame.TextRange.Font.Size = 16
+                        textbox.TextFrame.TextRange.Font.Size = 11
                         
                         For Z = 1 To SectionSlidesCount
                             Set Bullet = .Slides(X).Shapes.AddShape(BulletShape, _
-                                Offset + (5 + BulletSize) * SlideNumber, 20, BulletSize, BulletSize)
+                                Offset + (Z - 1) * (BulletSpacing + BulletSize), 16, BulletSize, BulletSize)
                             Bullet.Name = "Bullet"
                             ' Change the bullets' fill and line colour here (case: Other slide)
                             Bullet.Fill.ForeColor.RGB = vbBlack
