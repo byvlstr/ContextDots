@@ -35,7 +35,7 @@ partition your presentation
 3/ Enter a name, e.g. "ContextDots", and select "Create"
 
 4/ Then copy and paste the ContextDots code into the window,
-replacing default code lines
+overwriting default code lines
 
 5/ To execute this Macro, press the little (green) "play" symbol in the
 upper toolbar
@@ -43,7 +43,7 @@ upper toolbar
 6/ ContextDots should now be integrated into your PowerPoint
 presentation
 
-NB: If you change something and want to update the ContextDots bar,
+NB: If you change something to your slides and want to update the ContextDots bar,
 simply select "View" -> "Macros" -> "ContextDots" -> "Execute"
 
 
@@ -67,7 +67,7 @@ colour's RGB values and write "RGB(r, g, b)" in the code
 
 + If you want to change the bullet shape, here is a list of possible
 shapes:
-
+https://msdn.microsoft.com/EN-US/library/office/ff862770.aspx
 
 
 + If you want to change the bullets' size, change line "BulletSize = 9"
@@ -75,7 +75,9 @@ according to your needs
 
 
 
-+ To keep ContextDots in your Microsoft PowerPoint Macro list:
+FAQ:
+
+- Can I keep the ContextDots Macro in my Microsoft PowerPoint Macro list? At this moment, there is no (easy) way to keep record of used PPT macros... 
 
 
 
