@@ -79,5 +79,6 @@ FAQ:
 
 - Can I keep the ContextDots Macro in my Microsoft PowerPoint Macro list? At this moment, there is no (easy) way to keep record of used PPT macros... 
 
+- Will there be a method which doesn't require macro/coding skills? Stay tuned ;)
 
 
