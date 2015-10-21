@@ -15,10 +15,10 @@ Sub ContextDots()
                     bg.Fill.ForeColor.RGB = vbBlack
                     bg.Line.ForeColor.RGB = vbBlack
                     
-                    ' Change the bullets' size and Shape here
+                    ' Change the bullets' size, shape and spacing here
                     BulletSize = 6
                     BulletShape = msoShapeOval
-                    BulletSpacing = 4
+                    BulletSpacing = 2
                     
                     Offset = 20
                     SlideNumber = 1
@@ -43,12 +43,14 @@ Sub ContextDots()
                             Set Bullet = .Slides(X).Shapes.AddShape(BulletShape, _
                                 Offset + (Z - 1) * (BulletSpacing + BulletSize), 16, BulletSize, BulletSize)
                             Bullet.Name = "Bullet"
+                            Bullet.Line.Weight = 1
                             ' Change the bullets' fill and line colour here (case: Other slide)
                             Bullet.Fill.ForeColor.RGB = vbBlack
                             Bullet.Line.ForeColor.RGB = vbWhite
                             
                             
                             If X = SlideNumber Then
+                                textbox.TextFrame.TextRange.Font.Bold = True
                                 ' Change the bullets' fill and line colour here (case: active slide)
                                 Bullet.Fill.ForeColor.RGB = vbWhite
                             End If
