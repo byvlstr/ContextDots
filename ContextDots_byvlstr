@@ -35,9 +35,10 @@ Sub ContextDots()
                                 TextboxOffset, -2, 200, 50)
                         textbox.TextFrame.TextRange.Text = sectionTitle
                         textbox.Name = "SectionTitleBox"
-                        ' Change the font colour and size here
+                        ' Change the font colour, size and type here
                         textbox.TextFrame.TextRange.Font.Color = vbWhite
                         textbox.TextFrame.TextRange.Font.Size = 11
+                        textbox.TextFrame.TextRange.Font.Name = "Calibri Light"
                         
                         For Z = 1 To SectionSlidesCount
                             Set Bullet = .Slides(X).Shapes.AddShape(BulletShape, _
