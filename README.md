@@ -13,6 +13,8 @@ ContextDots was written by Valentin Lungenstrass (vlstr) in VBA and is
 currently available in version 1.0. This code snippet is Open Source
 and can be used and shared by anybody.
 
+![ContextDots Preview](https://raw.githubusercontent.com/byvlstr/ContextDots/master/Preview/Screenshot.png)
+
 
 INSTRUCTIONS
 -------------------------
