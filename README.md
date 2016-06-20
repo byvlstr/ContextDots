@@ -9,6 +9,8 @@ top to show the global context (PPT calls it 'section') : the
 advancement in this specific section, as well as the global progress
 among all sections.
 
+Inspired by Latex Beamer "Frankfurt", ContextDots is a port to Powerpoint.
+
 ContextDots was written by Valentin Lungenstrass (vlstr) in VBA and is
 currently available in version 1.0. This code snippet is Open Source
 and can be used and shared by anybody.
