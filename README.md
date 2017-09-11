@@ -25,7 +25,7 @@ REQUIREMENTS
 + Microsoft Office 2007+ able to run Macros (Windows RT is not
 compatible)
 + Use PowerPoint's "Section" feature to separate important parts
-+ Keep space free (default is 25 points) at the top of the slide
++ Keep space free (default is 25 points) at the top (or bottom) of the slide
 
 
 HOW TO USE IT
@@ -79,6 +79,8 @@ https://msdn.microsoft.com/EN-US/library/office/ff862770.aspx
 
 + If you want to change the bullets' size, change line "BulletSize = 9"
 according to your needs
+
++ If you want to have the bar at the bottom of your slide, use the other file named "ContextDots_atTheBottom". This will put the ContextDots bar at the bottom of your slide. Except the vertical positioning, no other change has been made to this file. All other customization options are still valid.
 
 
 
